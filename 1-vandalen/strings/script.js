@@ -1,9 +1,40 @@
 "use strict";
 
-window.onload = function(){
+window.onload = function()
+{
 
 	// I denna funktion ska du skriva koden för att hantera "spelet"
-	var convertString = function(str){
+	var convertString = function(str)
+	{
+	console.log(str);
+      var sentence = "";
+      console.log(str);
+      if (str === "")
+      	{
+			throw new Error("Du har inte angivit något! - Var god att försök igen.");
+	 	}
+	
+	       for (var i = 0; i < str.length; i++) 
+	       {
+				
+				if(str.charCodeAt(i) > 65 && str.charCodeAt(i) < 90 || str.charCodeAt(i) > 196 && str.charCodeAt(i) < 214)
+				{
+					sentence = sentence + str.charAt(i).toLowerCase().replace(/a/gi, "#");
+				}
+				else
+				{
+					sentence = sentence + str.charAt(i).toUpperCase().replace(/a/gi, "#");
+				}
+		}
+			
+			return sentence;
+		
+	
+	
+	
+	
+	
+	
 		// Plats för förändring.		
 		// Returnera den konverterade strängen.
 		// Vid fel, kasta ett undantag med ett meddelande till användaren. 
