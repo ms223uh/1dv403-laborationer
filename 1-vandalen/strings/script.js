@@ -11,7 +11,7 @@ window.onload = function()
       console.log(str);
       if (str === "")
       	{
-			throw new Error("Du har inte angivit något! - Var god att försök igen.");
+			throw new Error("Du har inte angivit något! - Var god att försök igen."); 
 	 	}
 	
 	       for (var i = 0; i < str.length; i++) 
