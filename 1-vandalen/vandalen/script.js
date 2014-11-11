@@ -41,7 +41,7 @@ var makePerson = function(persArr){
         nameArr.sort(function(a,b){
         return a.localeCompare(b);
         });
-        names = nameArr.toString();
+        names = nameArr.toString(); 
         names = names.split(",").join(", ")
         
         
