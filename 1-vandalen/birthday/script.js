@@ -6,12 +6,42 @@ window.onload = function(){
 	var birthday = function(date){
 		
 
+		var birthDay = new Date(date);
+		var currentDay = new Date();
+		birthDay.setFullYear(currentDay.getFullYear());
+					
+		
+		var day = (1000*60*60*24);
 
-			// Din kod här.
+		var remainingDay = Math.ceil((birthDay.getTime() - currentDay.getTime()) /day);
+	
+	if (date === "")
+	{
+		throw new Error ("Var god & ange ett datum.");
+	}
+	
+	if (remainingDay <= -1)
+		{
+			return remainingDay + 365;
+		}
 
-
-
-
+	
+		if(remainingDay === 0)
+		{
+			return 0;
+		}
+		
+		if(remainingDay  === 1)
+		{
+			return 1;
+		}
+		else
+		{
+			return remainingDay;
+		}
+		
+		
+		
 	};
 	// ------------------------------------------------------------------------------
 
