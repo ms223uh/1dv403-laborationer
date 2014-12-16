@@ -17,7 +17,6 @@ window.onload = function(){
 
 
 	if(isNaN(number) === false){
-		counter+=1
 		
 		if(number < 0 || number > 100){
 			return [false, "Talet är utanför intervallet 0 - 100"] 
@@ -28,17 +27,20 @@ window.onload = function(){
 		
 		
 		if(number == secret){
+			counter+1;
 			return [true, "Grattis du vann! Det hemliga talet var " +number+ " och du behövde " +counter+ " gissningar för att hitta det."]
-
+			
 		}
 	
 	
 	if(number<secret){
+		counter+1;
 		return [false, "Det hemliga talet är högre!"]
 	
 	}
 	
 	if(number>secret){
+		counter+1;
 		return [false, "Det hemliga talet är lägre!"]
 		
 	}
