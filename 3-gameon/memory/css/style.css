@@ -1,0 +1,78 @@
+body
+{
+    background-image: url("lostBackground.jpg");
+}
+
+
+#container
+{
+    width: 600px;
+    height: 702px;
+    border: 2px solid #000;
+    background-color: #d44a3d;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+
+
+#header
+{
+    font-family: verdana;
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    
+    
+}
+
+
+#playbox
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+    height: 550px;
+    width: 550px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #d44a3d;
+}
+
+
+#startGame
+{
+    text-align: center;
+    
+    
+}
+
+
+#resetGame
+{
+    text-align: center;
+    
+    
+    
+}
+
+
+#text
+{
+    width: 350px;
+    height: 50px;
+    background-color: #d44a3d;
+    border: 2px solid #000;
+    margin-left: 1200px;
+    margin-top: -54px;
+}
+
+
+.tableTag
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
