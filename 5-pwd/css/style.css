@@ -1,6 +1,6 @@
 body
 {
-    background-image: url("../pics/bg3.jpg");
+    background-image: url("../pics/bg5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -53,6 +53,12 @@ body
     vertical-align: middle;
 }
 
+.windowHeader .title .titlePic{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
 .windowHeader .close
 {
     width: 35px;
@@ -77,8 +83,14 @@ body
 
 .windowMain
 {
+    overflow: auto;
    flex-grow: 1;
     background-color: #fff;
+    resize: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
 }
 
 
@@ -99,15 +111,12 @@ body
 }
 
 
-.windowFooter .statusBar
-{
-    
-    color: #fff;
-    font-style: bold;
-    font-family: verdana;
-    pointer-events: none;
-    
-    
+
+
+
+.windowFooter img{
+    height: 20px;
+    width: 20px;
 }
 
 
@@ -125,7 +134,10 @@ body
     flex-direction: column;
     
 }
-
+ .menyBarContainer img{
+     width: 45px;
+     height: 45px;
+ }
 
 .menyBar
 {
@@ -161,5 +173,83 @@ body
 {
     transform: scale(1.1 , 1.1);
     color: #fff;
+    
+}
+
+
+
+
+.imageBox {
+   background-color: #000;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    
+    text-align: center;
+    width: 82px;
+    height: 62px;
+    
+}
+
+.imageBox img{
+    
+    margin-top: 5px;
+    
+}
+
+
+
+.imageViewer {
+    
+    display: inline-block;
+    
+}
+
+
+.windowMain .showRss h2{
+    
+    
+    text-size: 10px;
+}
+
+
+.showRss h2{
+    
+    font-size: 16px;
+    text-decoration: bold, underline;
+    
+}
+
+.showRss{
+    
+    font-size: 12px;
+    
+    
+}
+
+.showTV h2{
+    
+    font-size: 16px;
+    text-decoration: bold, underline;
+    
+}
+
+.showTV{
+    
+    font-size: 12px;
+    
+    
+}
+
+.showTweet h2{
+    
+    font-size: 16px;
+    text-decoration: bold, underline;
+    
+}
+
+.showTweet{
+    
+    font-size: 12px;
+    
     
 }

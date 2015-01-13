@@ -7,7 +7,8 @@ window.onload= function(){
     
     
     
-    var start = new Start(desk);
-    
-    
+    desk.addApp("Gallery", "pics/gallery.png", Gallery);
+    desk.addApp("Rss", "pics/rss.png", Rss);
+    desk.addApp("TV", "pics/tv.png", TV);
+    desk.addApp("Twitter", "pics/twitter.png", Twitter);
 }
